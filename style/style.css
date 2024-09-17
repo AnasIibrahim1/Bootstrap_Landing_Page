@@ -1,0 +1,337 @@
+/* Roots */
+:root {
+    --color-Links: rgba(84, 84, 84, 1);
+    --color-Bg: rgba(31, 31, 31, 1);
+    --FontS-Headers: 133px;
+    --FontS-Heads: 58px;
+    --FontS-Paragraph: 24px;
+    --FontS-Links: 22px;
+    --FontS-Nums : 50px;
+}
+
+/* General Styles */
+body {
+    font-family: "Inter", system-ui;
+    font-weight: 400;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    scroll-behavior: smooth !important;
+    behavior: smooth !important;
+}
+nav{
+    width: 90% !important;
+}
+h1{
+    font-size: var(--FontS-Headers);
+}
+h2{
+    font-size: var(--FontS-Nums);
+    color: var(--color-Links);
+}
+h3{
+    font-size: var(--FontS-Heads);
+    color: var(--color-Bg);
+}
+p{
+    font-size: var(--FontS-Links);
+    text-align: left;
+    color: var(--color-Links);
+}
+h5{
+    font-size: var(--FontS-Paragraph);
+    color: white;
+}
+.btn-dark {
+    background-color: var(--color-Bg);
+    width: 150px;
+}
+.btn-long{
+    width: 200px;
+    height: 50px;
+    margin-bottom: 30px !important;
+    text-align: center;
+}
+.btn-dark:hover {
+    background-color: #333;
+    border-color: #333;
+}
+.tit{
+    font-size: 20px;
+}
+.dp{
+    color: white;
+}
+/* Navbar Styles */
+.navbar-brand img{
+    width: 150px;
+}
+.collapse ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.collapse ul li{
+    padding: 0 10px;
+    font-size: var(--FontS-Links);
+    color: var(--color-Links);
+}
+
+/* Main Section Styles */
+.imagesC {
+    position: relative;
+    height: fit-content !important;
+}
+.img{
+    width: 600px;
+    height: 400px;
+    background-image: url(../Media/Bg/Image2.png);
+}
+.square , .span{
+    position: absolute;
+}
+.square{
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+    left: -10px;
+    top: -10px;
+    z-index: -1;
+}
+.span{
+    width: 150px;
+    height: 150px;
+    background-color: var(--color-Bg);
+    right: 0;
+    bottom: -10px;
+    color: white;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.white{
+    color : #fff
+}
+/* About Section Styles */
+#Line{
+    width: 100px;
+    height: 2px;
+    margin-right: 20px;
+    background-color: #000;
+}
+.cont{
+    text-align : left;
+}
+
+/* Designing Section */
+.desCont{
+    width : 50%;
+    height : 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.lineD{
+    width: 1px;
+    height: 100px;
+    background-color: var(--color-Links);
+}
+.con{
+    max-width: 80%;
+}
+
+/* Feeds Styles */
+.BlackQs{
+    bottom : 0;
+    right: 150px;
+    flex-wrap: wrap;
+}
+.blockquote{
+    width: 600px; 
+    height: 600px;
+    background-color: var(--color-Bg);
+    border: 30px solid white;
+}
+.face{
+    width: 40px;
+    height: 40px;
+}
+
+/* Newsletter */
+.newsletter{
+    position: relative;
+}
+.newsletter h3{
+    max-width: 60%;
+    margin-bottom: 30px;
+}
+.newsletter p{
+    max-width : 50%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.newsletter form{
+    padding: 10px;
+    background-color: #fff;
+    width: 600px;
+    position: absolute;
+    bottom: -20px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+}
+.newsletter form input{
+    border: none;
+    outline : none;
+}
+/* Footer Styles */
+footer {
+    background-color:var(--color-Bg);
+    color: #fff;
+}
+footer ul li{
+    padding: 15px;
+}
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #007bff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animations for specific sections */
+.hero h1 {
+    animation: slideInLeft 2s;
+}
+
+.hero p {
+    animation: slideInRight 2s;
+}
+
+.hero .btn {
+    animation: fadeIn 3s;
+}
+
+/* Responsive Styles */
+@media (max-width : 1400px){
+    .change1{
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+    .change2{
+width: 100% !important;
+    }
+    .change3{
+        display: none;
+    }
+    .change4{
+        position: static !important;
+    }
+    .change5{
+        flex-direction: column !important;
+        align-items :center !important;
+    }
+    .BlackQs{
+        justify-content: center !important;
+        align-items : center !important;
+
+    }
+}
+@media (max-width: 991px) {
+    .collapse ul{
+        display: block;
+        width: 100%;
+    }
+    .hero {
+        text-align: center;
+    }
+
+    .hero h1, .hero p {
+        animation: fadeIn 2s;
+    }
+}
+@media (max-width: 1000px) {
+    h1{
+        font-size: 70px !important;
+    }
+    h3{
+        font-size : 50px !important;
+    }
+    }
+@media (max-width: 768px) {
+    h1 {
+        font-size: 50px !important;
+    }
+    .change2{
+        align-items: center;
+            }
+            
+    .DESIM{
+        display: none !important;
+    }
+    .se{
+        padding : 0 !important;
+    }
+}
+@media (max-width : 610px){
+    .imagesC{
+        width :100% !important; 
+    }
+    .desCont{
+        width: 100% !important;
+    }
+    h3{
+        font-size : 45px !important;
+    }
+    blockquote{
+        width: 75% !important;
+        height: auto !important;
+        border: 3px solid black !important;
+    }
+    h5{
+        font-size: 14px !important;
+    }
+    p{
+        font-size: 14px;
+        max-width: 75%;
+    }
+    .newsletter form{
+        width: 100%;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+}

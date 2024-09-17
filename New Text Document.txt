@@ -1,0 +1,7 @@
+Header => Links Font inter / size 22 / Color rgba(84, 84, 84, 1) - Hoverd rgba(31, 31, 31, 1) / Button 176x60 , Bg = rgba(31, 31, 31, 1) / Font 20 
+Main => Font 133 / rgba(31, 31, 31, 1) / Paragraph 24px rgba(84, 84, 84, 1)  / Button => 302x86 r4px
+ou
+Photos => 610x610 , 638x406 , Down Button 151 x 151 
+Heads => 58px rgba(31, 31, 31, 1) inter 
+card => 30px w600 
++ heads => 24px photo 711x711
